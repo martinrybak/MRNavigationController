@@ -10,7 +10,7 @@
 
 @interface MRNavigationController : UINavigationController <UINavigationControllerDelegate>
 
-- (id)initWithRootViewController:(UIViewController*)rootViewController navigationBarHidden:(BOOL)navigationBarHidden toolBarHidden:(BOOL)toolBarHidden;
-- (void)pushViewController:(UIViewController*)viewController animated:(BOOL)animated navigationBarHidden:(BOOL)navigationBarHidden toolBarHidden:(BOOL)toolBarHidden push:(void(^)(void))onPush pop:(void(^)(void))onPop;
+- (id)initWithRootViewController:(UIViewController*)rootViewController navigationBarHidden:(BOOL)navigationBarHidden toolbarHidden:(BOOL)toolbarHidden;
+- (void)pushViewController:(UIViewController*)viewController animated:(BOOL)animated navigationBarHidden:(BOOL)navigationBarHidden toolbarHidden:(BOOL)toolbarHidden push:(void(^)(void))onPush pop:(void(^)(void))onPop;
 
 @end

@@ -12,7 +12,7 @@
 
 @property (weak, nonatomic) UIViewController* controller;
 @property (assign, nonatomic) BOOL navigationBarHidden;
-@property (assign, nonatomic) BOOL toolBarHidden;
+@property (assign, nonatomic) BOOL toolbarHidden;
 @property (copy, nonatomic) void(^onPush)(void);
 @property (copy, nonatomic) void(^onPop)(void);
 

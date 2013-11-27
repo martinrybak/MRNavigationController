@@ -32,7 +32,7 @@
 	self.vc1 = [[MRViewControllerOne alloc] init];
 	self.vc1.title = @"Root";
 	self.vc1.delegate = self;
-	self.nav = [[MRNavigationController alloc] initWithRootViewController:self.vc1 navigationBarHidden:YES toolBarHidden:YES];
+	self.nav = [[MRNavigationController alloc] initWithRootViewController:self.vc1 navigationBarHidden:YES toolbarHidden:YES];
 	self.window.rootViewController = self.nav;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -56,7 +56,7 @@
 	self.vc2 = [[MRViewControllerTwo alloc] init];
 	self.vc2.delegate = self;
 	self.vc2.title = @"View Controller 2";
-	[self.nav pushViewController:self.vc2 animated:YES navigationBarHidden:NO toolBarHidden:NO push:^{
+	[self.nav pushViewController:self.vc2 animated:YES navigationBarHidden:NO toolbarHidden:NO push:^{
 		NSLog(@"VC1 pushed VC2");
 	} pop:^{
 		NSLog(@"VC2 popped");
@@ -69,7 +69,7 @@
 	self.vc3 = [[MRViewControllerThree alloc] init];
 	self.vc3.delegate = self;
 	self.vc3.title = @"View Controller 3";
-	[self.nav pushViewController:self.vc3 animated:YES navigationBarHidden:NO toolBarHidden:YES push:^{
+	[self.nav pushViewController:self.vc3 animated:YES navigationBarHidden:NO toolbarHidden:YES push:^{
 		NSLog(@"VC2 pushed VC3");
 	} pop:^{
 		NSLog(@"VC3 popped");
@@ -82,7 +82,7 @@
 	self.vc4 = [[MRViewControllerFour alloc] init];
 	self.vc4.delegate = self;
 	self.vc4.title = @"View Controller 4";
-	[self.nav pushViewController:self.vc4 animated:YES navigationBarHidden:NO toolBarHidden:NO push:^{
+	[self.nav pushViewController:self.vc4 animated:YES navigationBarHidden:NO toolbarHidden:NO push:^{
 		NSLog(@"VC3 pushed VC4");
 	} pop:^{
 		NSLog(@"VC4 popped");
