@@ -1,6 +1,6 @@
 # MRNavigationController
 
-A **UINavigationController** with a **pushViewController** method that accepts **push** and **pop** blocks, as well as **navigation bar** and **toolbar** visibility settings, for each pushed controller. Here is a usage example:
+A **UINavigationController** with a **pushViewController** method that accepts **push** and **pop** blocks, as well as **navigation bar** and **toolbar** visibility settings, for each pushed controller. Here is a sample:
 
 ```sh
 #import "MRNavigationController.h"
@@ -15,7 +15,9 @@ self.nav = [[MRNavigationController alloc] initWithRootViewController:self.vc1 n
 	self.vc2 = nil;
 }];
 ```
-The **push** handler is executed after a view controller has finished animating onto the screen. The **pop** handler is invoked when the back button is pressed on that controller, or if it is popped in code via one of the standard pop methods:
+In this example, the navigation controller will display the **vc1** view controller with no navigation bar and no toolbar. It will then push the **vc2** view controller *with* a navigation bar and toolbar. When the push animation is complete, it will write “VC1 pushed VC2″ to the console. When its back button is pressed, it will write “VC2 popped” to the console, the **vc2** view controller will be removed (with animation), and the **vc1** view controller will once again appear with no navigation bar and no toolbar.
+
+The pop handler is also invoked if the view controller is popped manually via one of the standard pop methods:
 
 * popViewControllerAnimated:
 * popToViewController:animated:
