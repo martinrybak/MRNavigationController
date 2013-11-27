@@ -7,8 +7,8 @@ A **UINavigationController** with a **pushViewController** method that accepts *
 
 self.vc1 = [[UIViewController alloc] init];
 self.vc2 = [[UIViewController alloc] init];
-self.nav = [[UINavigationController alloc] initWithRootViewController:self.vc1 navigationBarHidden:YES toolBarHidden:YES];
-[self.nav pushViewController:self.vc2 animated:YES navigationBarHidden:NO toolBarHidden:NO push:^{
+self.nav = [[UINavigationController alloc] initWithRootViewController:self.vc1 navigationBarHidden:YES toolbarHidden:YES];
+[self.nav pushViewController:self.vc2 animated:YES navigationBarHidden:NO toolbarHidden:NO push:^{
     NSLog(@"VC1 pushed VC2");
 } pop:^{
 	NSLog(@"VC2 popped");
