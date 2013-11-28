@@ -1,6 +1,6 @@
 # MRNavigationController
 
-A **UINavigationController** with a **pushViewController** method that accepts **push** and **pop** blocks, as well as **navigation bar** and **toolbar** visibility settings, for each pushed controller. Here is a sample:
+A **UINavigationController** subclass with a **pushViewController** method that accepts **push** and **pop** blocks, as well as **navigation bar** and **toolbar** visibility settings, for each pushed controller. Here is a sample:
 
 ```sh
 #import "MRNavigationController.h"
