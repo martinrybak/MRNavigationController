@@ -30,11 +30,14 @@ The following superclass methods can still be used, but pushed view controllers 
 * initWithRootViewController:
 * pushViewController:animated:
 
+You can still use your own delegate thanks to a trick from a fantastic library called [HTDelegateProxy]. 
+
 For a live example, download and run the Xcode project.
 
 ## Installation
-I’ve published this library as a [CocoaPod], which is the easiest way to install it. Otherwise, simply manually copy the [class files] into your project.
+I’ve published this library as a [CocoaPod], which is the easiest way to install it. Otherwise, simply manually copy these [class files] and [HTDelegateProxy] files into your project.
 
   [CocoaPod]: http://www.cocoapods.org/?q=MRNavigationController
   [class files]: https://github.com/martinrybak/MRNavigationController/tree/master/MRNavigationController/MRNavigationController/MRNavigationController
+  [HTDelegateProxy]: https://github.com/hoteltonight/HTDelegateProxy/archive/master.zip
     
