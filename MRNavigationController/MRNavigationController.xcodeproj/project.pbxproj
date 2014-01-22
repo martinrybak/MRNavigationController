@@ -27,6 +27,7 @@
 		5B06AA5A184119970024E5AA /* MRViewControllerThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B06AA58184119970024E5AA /* MRViewControllerThree.xib */; };
 		5B06AA641841292B0024E5AA /* MRViewControllerFour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B06AA621841292B0024E5AA /* MRViewControllerFour.m */; };
 		5B06AA651841292B0024E5AA /* MRViewControllerFour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B06AA631841292B0024E5AA /* MRViewControllerFour.xib */; };
+		5B358771188F3458007C8343 /* HTDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B358770188F3458007C8343 /* HTDelegateProxy.m */; };
 		5BCC868918426B6400C1948C /* MRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC868418426B6400C1948C /* MRNavigationController.m */; };
 		5BCC868A18426B6400C1948C /* MRStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC868618426B6400C1948C /* MRStack.m */; };
 		5BCC868B18426B6400C1948C /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC868818426B6400C1948C /* MRViewController.m */; };
@@ -71,6 +72,8 @@
 		5B06AA611841292B0024E5AA /* MRViewControllerFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRViewControllerFour.h; sourceTree = "<group>"; };
 		5B06AA621841292B0024E5AA /* MRViewControllerFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRViewControllerFour.m; sourceTree = "<group>"; };
 		5B06AA631841292B0024E5AA /* MRViewControllerFour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRViewControllerFour.xib; sourceTree = "<group>"; };
+		5B35876F188F3458007C8343 /* HTDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTDelegateProxy.h; sourceTree = "<group>"; };
+		5B358770188F3458007C8343 /* HTDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTDelegateProxy.m; sourceTree = "<group>"; };
 		5BCC868318426B6400C1948C /* MRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRNavigationController.h; sourceTree = "<group>"; };
 		5BCC868418426B6400C1948C /* MRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRNavigationController.m; sourceTree = "<group>"; };
 		5BCC868518426B6400C1948C /* MRStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRStack.h; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 		5B06AA1F1841191A0024E5AA /* MRNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				5B35876E188F342D007C8343 /* HTDelegateProxy */,
 				5BCC868218426B0D00C1948C /* MRNavigationController */,
 				5B06AA4E184119570024E5AA /* View */,
 				5B06AA4F1841195B0024E5AA /* Controller */,
@@ -200,6 +204,15 @@
 				5B06AA621841292B0024E5AA /* MRViewControllerFour.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		5B35876E188F342D007C8343 /* HTDelegateProxy */ = {
+			isa = PBXGroup;
+			children = (
+				5B35876F188F3458007C8343 /* HTDelegateProxy.h */,
+				5B358770188F3458007C8343 /* HTDelegateProxy.m */,
+			);
+			name = HTDelegateProxy;
 			sourceTree = "<group>";
 		};
 		5BCC868218426B0D00C1948C /* MRNavigationController */ = {
@@ -322,6 +335,7 @@
 				5B06AA59184119970024E5AA /* MRViewControllerThree.m in Sources */,
 				5B06AA261841191A0024E5AA /* main.m in Sources */,
 				5B06AA2A1841191A0024E5AA /* MRAppDelegate.m in Sources */,
+				5B358771188F3458007C8343 /* HTDelegateProxy.m in Sources */,
 				5BCC868918426B6400C1948C /* MRNavigationController.m in Sources */,
 				5B06AA4B1841194B0024E5AA /* MRViewControllerOne.m in Sources */,
 			);

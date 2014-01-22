@@ -8,12 +8,14 @@
 
 #import "MRNavigationController.h"
 #import "MRViewController.h"
+#import "HTDelegateProxy.h"
 #import "MRStack.h"
 
 @interface MRNavigationController ()
 
 @property (strong, nonatomic) MRStack* controllers;
 @property (strong, nonatomic) MRViewController* pushedController;
+@property (strong, nonatomic) HTDelegateProxy* delegateProxy;
 
 @end
 
@@ -34,11 +36,18 @@
 
 #pragma mark - Public
 
+- (void)setDelegate:(id<UINavigationControllerDelegate>)delegate
+{
+    self.delegateProxy = [[HTDelegateProxy alloc] initWithDelegates:@[ self, delegate ]];
+    super.delegate = (id)self.delegateProxy;
+}
+
 - (id)initWithRootViewController:(UIViewController*)rootViewController navigationBarHidden:(BOOL)navigationBarHidden toolbarHidden:(BOOL)toolbarHidden
 {
 	if (self = [super initWithRootViewController:rootViewController])
 	{
-		super.delegate = self;
+        self.delegateProxy = [[HTDelegateProxy alloc] initWithDelegates:@[ self ]];
+		super.delegate = (id)self.delegateProxy;
 		self.controllers = [[MRStack alloc] init];
         [self savePushController:rootViewController navigationBarHidden:navigationBarHidden toolbarHidden:toolbarHidden push:nil pop:nil];
 	}
