@@ -99,9 +99,6 @@
 		if (self.pushedController.onPush)
 			self.pushedController.onPush();
 		
-		//Add it to our internal stack
-		[self.controllers push:self.pushedController];
-		
 		//Reset the temp variable
 		self.pushedController = nil;
 	}
@@ -117,6 +114,7 @@
 	self.pushedController.toolbarHidden = toolbarHidden;
 	self.pushedController.onPush = onPush;
 	self.pushedController.onPop = onPop;
+	[self.controllers push:self.pushedController];
 }
 
 - (void)setNavigationBarHidden:(BOOL)navigationBarHidden toolbarHidden:(BOOL)toolbarHidden animated:(BOOL)animated
